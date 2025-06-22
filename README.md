@@ -1,4 +1,4 @@
-# FlowiseApp
+# SummitSuite
 
 This is the central repository for building and deploying the AI agent Web App.
 
