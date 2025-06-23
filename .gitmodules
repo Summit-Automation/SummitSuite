@@ -1,0 +1,3 @@
+[submodule "summit-ui"]
+	path = summit-ui
+	url = git@github.com:milanfusco/Summit-UI.git
