@@ -13,9 +13,12 @@ This is the central repository for building and deploying the AI agent Web App.
 ## Project Status
 
 - [X] Create repo
-- [ ] Add backend components
-- [ ] Add frontend code
-- [ ] Implement user authentication and role-based model access
+- [X] Add backend components (Supabase authentication and PostgreSQL databases)
+- [X] Add frontend code 
+- [X] Implement user authentication and role-based model access
+- [ ] Add Docker files to repo
+- [ ] Add Flowise agents to repo
+- [ ] Set up CI/CD with GitHub Actions
 
 ---
 
