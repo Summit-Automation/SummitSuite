@@ -1,1 +1,26 @@
+name: GitHub AWS OIDC
 
+on:
+  push:
+    branches: [test]
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  OIDC test:
+      runs-on: [ubuntu-latest]
+      steps:
+        - name: Checkout Source
+          uses: actions/checkout@v4
+        - name: Configure AWS Credentials using OIDC
+          uses: aws-actions/configure-aws-credentials@v4.1.0
+          with:
+            aws-region: us-east-2
+            role-to-assume: ${{secrets.AWS_IAM_ROLE}}
+        - name: Test AWS Credentials
+          run: aws sts get-caller-identity
+
+
+        
